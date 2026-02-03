@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/result-web/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="A comprehensive Result Management System for tracking earnings and performance." />
+    <title>Result Management System</title>
+    <link rel="manifest" href="/result-web/manifest.json" />
+    <script type="module" crossorigin src="/result-web/assets/index-CCVSeVgJ.js"></script>
+    <link rel="stylesheet" crossorigin href="/result-web/assets/index-DHfWOa8w.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js')
+            .then((registration) => {
+              console.log('ServiceWorker registration successful with scope: ', registration.scope);
+            }, (err) => {
+              console.log('ServiceWorker registration failed: ', err);
+            });
+        });
+      }
+    </script>
+  </body>
+</html>
